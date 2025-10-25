@@ -279,7 +279,7 @@ document.addEventListener("DOMContentLoaded", () => {
         } else if (w <= 1024) {
             return { before: 88, after: 250 };   // 태블릿
         } else {
-            return { before: 280, after: 500 };  // PC 기본
+            return { before: 200, after: 500 };  // PC 기본
         }
     }
     let __historyOffset = getHistoryOffsets();
