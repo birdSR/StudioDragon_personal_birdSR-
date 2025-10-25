@@ -280,7 +280,10 @@
 
 .v_and_m .cont article .txt {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(40px);
+    left: 50px;
+    right: 50px;
+    top: 40%;
 }
 
 .v_and_m .cont article::before {
@@ -290,6 +293,23 @@
 .v_and_m .cont article.mission::before {
     background-image: url(../assets/mission_1024.jpg);
 }
+
+.v_and_m .cont article::after {
+    left: 50px;
+    width: 100px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.v_and_m .txt p {
+    font-size: 30px;
+}
+
+.v_and_m .txt em {
+    font-size: 14px;
+}
+
+
 
 }
 
