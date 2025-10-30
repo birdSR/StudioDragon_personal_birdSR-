@@ -24,76 +24,163 @@
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/Draggable.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-    <script src="/back/js/MainBack.js"></script>
-    <script src="/intro_kim/js/introkim.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/MainBack.js"></script>
+    <script src="js/introkim.js"></script>
 </head>
 
 <body>
     <div class="wrap">
+        <!-- 헤더 시작 -->
         <header class="">
-             <div class="header_bg">
+            <div class="header_bg">
         </div>
             <div class="inner">
-                <h1><a href="#" class="logo"><img src="back/img/logo_w.png" alt="StudioDragonLogo"></a></h1>
                 <nav class="">
                     <ul class="gnb">
-                        <li class=""><a href="#">ABOUT</a>
+                        <li class=""><a href="/intro.html">ABOUT</a>
                             <ul class="sub">
-                                <li><a href="#">About Us</a></li>
-                                <li><a href="#">Business Ethics</a></li>
-                                <li><a href="#">Partnerships</a></li>
-                                <li><a href="#">History</a></li>
-                                <li><a href="#">CEO Message</a></li>
-                                <li><a href="#">Contact & Location</a></li>
+                                <li><a href="/intro.html">About Us</a></li>
+                                <li><a href="index.html">Business Ethics</a></li>
+                                <li><a href="index.html">Partnerships</a></li>
+                                <li><a href="index.html">History</a></li>
+                                <li><a href="index.html">CEO Message</a></li>
+                                <li><a href="index.html">Contact & Location</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">WORKS</a>
+                        <li><a href="/Listworks_lee.html">WORKS</a>
                             <ul class="sub">
-                                <li><a href="#">Production List</a></li>
-                                <li><a href="#">Viewer Participation</a></li>
+                                <li><a href="Listworks_lee.html">Production List</a></li>
+                                <li><a href="/viewersplayground_moon.html">Viewer Participation</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">NEWSROOM</a>
+                        <li><a href="index.html">NEWSROOM</a>
                             <ul class="sub">
-                                <li><a href="#">Notice</a></li>
-                                <li><a href="#">News</a></li>
+                                <li><a href="index.html">Notice</a></li>
+                                <li><a href="index.html">News</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">IR</a>
+                        <li>
+                            <h1><a href="/index.html" class="logo"><img src="back/img/logo_color.png" alt="StudioDragonLogo"></a></h1>
+                        </li>
+                        <li><a href="/IR.html">IR</a>
                             <ul class="sub">
-                                <li><a href="#">IR Insights</a></li>
-                                <li><a href="#">Materials</a></li>
+                                <li><a href="IR.html">IR Insights</a></li>
+                                <li><a href="index.html">Materials</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">SUSTAINABILITY</a>
+                        <li><a href="index.html">SUSTAINABILITY</a>
                             <ul class="sub">
-                                <li><a href="#">Sustainability Story</a></li>
-                                <li><a href="#">Sustainability Activities</a></li>
-                                <li><a href="#">Sustainability Report</a></li>
-                                <li><a href="#">ESG Ratings</a></li>
-                                <li><a href="#">Sustainability Report</a></li>
+                                <li><a href="index.html">Sustainability Story</a></li>
+                                <li><a href="index.html">Sustainability Activities</a></li>
+                                <li><a href="index.html">Sustainability Report</a></li>
+                                <li><a href="index.html">ESG Ratings</a></li>
+                                <li><a href="index.html">Sustainability Report</a></li>
                             </ul>
                         </li>
-                    </ul><!-- //.gnb -->
-                    <div class="right">
+                        <li>
+                            <div class="right">
                         <div class="lang">
-                            <a href="#" class="en ">EN</a>
+                            <a href="#" class="en active">EN</a>
                             <a href="#" class="kr ">KR</a>
                         </div><!-- //.lang -->
                         <div class="user">
-                            <a href="#"><img src="back/img/user.png" alt="user"></a>
+                            <a href="">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="34" viewBox="0 0 36 34" fill="none">
+  <rect x="1" y="1" width="34" height="32" rx="16" stroke="#0D031C" stroke-width="2"/>
+  <path d="M28 30.5V25.75C28 24.4239 27.4732 23.1521 26.5355 22.2145C25.5979 21.2768 24.3261 20.75 23 20.75H13C11.6739 20.75 10.4021 21.2768 9.46447 22.2145C8.52678 23.1521 8 24.4239 8 25.75V30.5" stroke="#0D031C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 17.5C21.3137 17.5 24 14.8137 24 11.5C24 8.18629 21.3137 5.5 18 5.5C14.6863 5.5 12 8.18629 12 11.5C12 14.8137 14.6863 17.5 18 17.5Z" fill="#0D031C"/>
+</svg>
+</a>
                         </div><!-- //.user -->
-                        <div class="ham">
-                            <ul>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                            </ul>
-                        </div>
+                        <div class="nav_ham">
+                            <img src="/asset/nav_ham.svg" alt="">
+                        </div><!-- //.nav_ham -->
                     </div><!-- //.right -->
-                </nav>
+                        </li>
+                    </ul><!-- //.gnb -->
+                    </nav>
+
             </div><!-- //.inner -->
         </header>
+
+        <!-- 햄버거 메뉴 독립 배치 -->
+        <div class="ham">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+
+        <!-- 햄버거 메뉴 네비게이션 -->
+        <nav class="ham_nav">
+            <div class="menu_header">
+                <div class="language_switcher">
+                    <a href="#" class="lang_link active">EN</a>
+                    <a href="#" class="lang_link">KO</a>
+                </div>
+
+                <div class="menu_icons">
+                    <a href="#" class="icon_link">
+                        <img src="back/img/user.png" alt="Profile">
+                    </a>
+                    <button type="button" class="icon_link close_btn">
+                        <img src="/asset/x-circle.svg" alt="">
+                    </button>
+                </div>
+            </div>
+
+            <ul class="main_nav">
+                <li class="nav_item">
+                    <a href="/intro_kim/intro.html" class="main_category">ABOUT</a>
+                    <ul class="submenu">
+                        <li><a href="/intro_kim/intro.html">About Us</a></li>
+                        <li><a href="index.html">Business Ethics</a></li>
+                        <li><a href="index.html">Partnerships</a></li>
+                        <li><a href="index.html">History</a></li>
+                        <li><a href="index.html">CEO Message</a></li>
+                        <li><a href="index.html">Contact & Location</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_item">
+                    <a href="Listworks_lee.html" class="main_category">WORKS</a>
+                    <ul class="submenu">
+                        <li><a href="Listworks_lee.html">Production List</a></li>
+                        <li><a href="viewersplayground_moon.html">Viewer Participation</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_item">
+                    <a href="index.html" class="main_category">NEWSROOM</a>
+                    <ul class="submenu">
+                        <li><a href="index.html">Notice</a></li>
+                        <li><a href="index.html">News</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_item">
+                    <a href="IR.html" class="main_category">IR</a>
+                    <ul class="submenu">
+                        <li><a href="IR.html">IR Insights</a></li>
+                        <li><a href="index.html">Materials</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav_item">
+                    <a href="index.html" class="main_category">SUSTAINABILITY</a>
+                    <ul class="submenu">
+                        <li><a href="index.html">Sustainability Story</a></li>
+                        <li><a href="index.html">Sustainability Activities</a></li>
+                        <li><a href="index.html">Sustainability Report</a></li>
+                        <li><a href="index.html">ESG Ratings</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav><!-- //.ham_nav -->
+        <!-- 여기까지 헤더 -->
+
         <main>
             <section class="main_cach">
                 <div class="swiper">
