@@ -1,5 +1,4 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap');
 @import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
 
 * {
@@ -107,7 +106,7 @@
 
 
 body {
-    font-family: "Assistant", sans-serif;
+    font-family: "Pretendard Variable", sans-serif;
     min-height: 5000px;
 }
 .wrap{
@@ -215,7 +214,7 @@ header nav ul.gnb>li {
     width: 100%;
     height: 100%;
     font-size: 22px;
-    font-weight: 300;
+    font-weight: 600;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -286,17 +285,65 @@ header nav ul.gnb>li:hover>ul.sub {
     display: block;
 }
 
-header nav ul.gnb>li:nth-child(1)>ul.sub {
-    width: 236px;
-    height: 386px;
+header nav ul.gnb>li>ul.sub>li a{
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin:40px 0;
 }
 
-header nav ul.gnb>li:nth-child(2)>ul.sub {
+/* 각 li를 드롭다운 기준점으로 */
+header nav ul.gnb > li {
+  position: relative;
+}
+
+/* 2deps: 각 li 아래에서 개별 오픈 (좌측 정렬) */
+header nav ul.gnb > li > ul.sub {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  transform: none; /* 기존 translateX(-50%) 제거 */
+  display: none;
+
+  /* 기존 디자인 유지 */
+  font-size: 20px;
+  backdrop-filter: blur(15px);
+  padding: 24px 20px;
+  border: 1px solid #4F485A;
+  border-top: 0;
+  border-radius: 0 0 32px 32px;
+  background: rgba(13, 3, 28, 0.80);
+
+  min-width: 220px;
+  box-shadow: 0 8px 24px rgba(0,0,0,.18);
+  z-index: 20;
+}
+
+/* 호버/포커스 시 해당 li의 sub만 */
+header nav ul.gnb > li:hover > ul.sub,
+header nav ul.gnb > li:focus-within > ul.sub {
+  display: block;
+}
+
+/* 항목 패딩 정돈 (기존 margin 간격이 너무 큼) */
+header nav ul.gnb > li > ul.sub > li a {
+  display: block;
+  padding: 10px 8px;
+  margin: 0;
+  color: var(--Wcolor);
+  text-decoration: none;
+  white-space: nowrap;
+}
+header nav ul.gnb > li > ul.sub > li a:hover {
+  color: var(--MainColor);
+}
+
+/* header nav ul.gnb>li:nth-child(2)>ul.sub {
     width: 248px;
     height: 162px;
-}
+} */
 
-header nav ul.gnb>li:nth-child(3)>ul.sub {
+/* header nav ul.gnb>li:nth-child(3)>ul.sub {
     width: 135px;
     height: 162px;
 }
@@ -309,11 +356,11 @@ header nav ul.gnb>li:nth-child(4)>ul.sub {
 header nav ul.gnb>li:nth-child(5)>ul.sub {
     width: 288px;
     height: 330px;
-}
+} */
 
-header nav ul.gnb>li>ul.sub li {
+/* header nav ul.gnb>li>ul.sub li {
     padding-bottom: 30px;
-}
+} */
 
 header nav ul.gnb>li>ul.sub li:hover,
 header nav ul.gnb>li>ul.sub li.on {
